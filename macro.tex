@@ -1,0 +1,48 @@
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Cdot}{\boldsymbol{\cdot}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\sub}{\subseteq}
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Y}{\mathcal{Y}}
+
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\l}{\left}
+\renewcommand{\r}{\right}
+
+\newcommand{\wt}{\widetilde}
+\renewcommand{\t}{\tilde}
+
+
+
+\theoremstyle{definition}
+
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+
+\newcustomtheorem{thm}{Theorem}
+\newcustomtheorem{clm}{Claim}
+\newcustomtheorem{lemma}{Lemma}
+\newcustomtheorem{rmk}{Remark}
+\newcustomtheorem{cor}{Corollary}
+\newcustomtheorem{prop}{Proposition}
+\newcustomtheorem{fact}{Fact}
+\newcustomtheorem{defn}{Definition}
+\newcustomtheorem{ex}{Exercise}
+\newcustomtheorem{eg}{Example}
