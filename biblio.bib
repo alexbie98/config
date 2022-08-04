@@ -10,7 +10,7 @@
   year   = {2019},
 }
 
-@inproceedings{carlini2021extracting,
+@inproceedings{gpt2-extract,
     author  = {Nicholas Carlini and 
                Florian Tram{\`e}r and 
                Eric Wallace and 
@@ -79,7 +79,6 @@
                Jonathan R. Ullman},
   title     = {Privately Learning High-Dimensional Distributions},
   booktitle = {Conference on Learning Theory, {COLT} 2019},
-  series    = {Proceedings of Machine Learning Research},
   volume    = {99},
   pages     = {1853--1902},
   year      = {2019},
@@ -95,7 +94,7 @@
   year      = {2019}
 }
 
-@inproceedings {bst14,
+@inproceedings{bst14,
   title     = {Private empirical risk minimization: Efficient algorithms and tight error bounds},
   author    = {Raef Bassily and 
                Adam Smith and 
@@ -105,7 +104,7 @@
   year      = {2014},
 }
 
-@article {cms11,
+@article {dp-erm,
   title   = {Differentially private empirical risk minimization.},
   author  = {Chaudhuri, Kamalika and Monteleoni, Claire and Sarwate, Anand D},
   journal = {Journal of Machine Learning Research},
@@ -146,30 +145,30 @@
 }
 
 @article{sst06,
-author = {Sankar, Arvind and Spielman, Daniel A. and Teng, Shang-Hua},
-title = {Smoothed Analysis of the Condition Numbers and Growth Factors of Matrices},
-year = {2006},
-issue_date = {June 2006},
-publisher = {Society for Industrial and Applied Mathematics},
-address = {USA},
-volume = {28},
-number = {2},
-issn = {0895-4798},
-journal = {SIAM J. Matrix Anal. Appl.},
-month = {Jun},
-pages = {446–476},
-numpages = {31},
-keywords = {Gaussian elimination, condition number, smoothed analysis, growth factor}
+  author     = {Arvind Sankar and 
+                Daniel A. Spielman and 
+                Shang-Hua Teng},
+  title      = {Smoothed Analysis of the Condition Numbers and Growth Factors of Matrices},
+  year       = {2006},
+  issue_date = {June 2006},
+  volume     = {28},
+  number     = {2},
+  journal    = {SIAM J. Matrix Anal. Appl.},
+  pages      = {446–476},
+  numpages   = {31},
 }
 
-@misc{ds01,
-  title={Local operator theory, random matrices and Banach spaces, Handbook of the geometry of Banach spaces, Vol. I, 317--366},
-  author={Davidson, K and Szarek, Stanislaw J},
-  year={2001},
-  publisher={North-Holland, Amsterdam}
+@article{ds01,
+  title   = {Local operator theory, random matrices and Banach spaces},
+  volume  = {1},
+  pages   = {317--366},
+  author  = {Kenneth R. Davidson and
+             Stanislaw J. Szarek K},
+  year    = {2001},
+  journal = {Handbook of the Geometry of Banach spaces},
 }
 
-@inproceedings{classifierEBM,
+@inproceedings{classifier-ebm,
   author    = {Will Grathwohl and
                Kuan{-}Chieh Wang and
                J{\"{o}}rn{-}Henrik Jacobsen and
@@ -178,85 +177,69 @@ keywords = {Gaussian elimination, condition number, smoothed analysis, growth fa
                Kevin Swersky},
   title     = {Your classifier is secretly an energy based model and you should treat
                it like one},
-  booktitle = {8th International Conference on Learning Representations, {ICLR} 2020,
-               Addis Ababa, Ethiopia, April 26-30, 2020},
-  year      = {2020}
+  booktitle = {8th International Conference on Learning Representations, {ICLR} 2020}
+  year      = {2020},
 }
 
 @article{tao21benchmarking,
-  author    = {Yuchao Tao and
-               Ryan McKenna and
-               Michael Hay and
-               Ashwin Machanavajjhala and
-               Gerome Miklau},
-  title     = {Benchmarking Differentially Private Synthetic Data Generation Algorithms},
-  journal   = {CoRR},
-  volume    = {abs/2112.09238},
-  year      = {2021},
-  eprinttype = {arXiv},
-  eprint    = {2112.09238},
+  author  = {Yuchao Tao and
+             Ryan McKenna and
+             Michael Hay and
+             Ashwin Machanavajjhala and
+             Gerome Miklau},
+  title   = {Benchmarking Differentially Private Synthetic Data Generation Algorithms},
+  journal = {CoRR},
+  volume  = {abs/2112.09238},
+  year    = {2021},
 }
 
-@inproceedings{dphandcrafted,
+@inproceedings{dp-handcrafted,
   author    = {Florian Tram{\`{e}}r and
                Dan Boneh},
   title     = {Differentially Private Learning Needs Better Features (or Much More
                Data)},
-  booktitle = {9th International Conference on Learning Representations, {ICLR} 2021,
-               Virtual Event, Austria, May 3-7, 2021},
-  year      = {2021}
-
+  booktitle = {9th International Conference on Learning Representations, {ICLR} 2021},
+  year      = {2021},
 }
 
-@article{dpsynthetichardness,
-author = {Ullman, Jonathan and Vadhan, Salil},
-title = {PCPs and the Hardness of Generating Synthetic Data},
-year = {2020},
-issue_date = {Oct 2020},
-publisher = {Springer-Verlag},
-address = {Berlin, Heidelberg},
-volume = {33},
-number = {4},
-issn = {0933-2790},
-journal = {J. Cryptol.},
-month = {Oct},
-pages = {2078–2112},
-numpages = {35}
+@article{dp-synthetic-hardness,
+  author     = {Jonathan Ullman and 
+                Salil Vadhan},
+  title      = {PCPs and the Hardness of Generating Synthetic Data},
+  year       = {2020},
+  issue_date = {October 2020},
+  volume     = {33},
+  number     = {4},
+  journal    = {J. Cryptol.},
+  pages      = {2078–2112},
+  numpages   = {35},
 }
 
-@phdthesis{pytorchwavelets,
-  title={Uses of Complex Wavelets in Deep Convolutional Neural Networks},
-  author={Cotter, Fergal},
-  year={2020},
-  school={University of Cambridge}
+@phdthesis{pytorch-wavelets,
+  title  = {Uses of Complex Wavelets in Deep Convolutional Neural Networks},
+  author = {Fergal Cotter},
+  year   = {2020},
+  school = {University of Cambridge},
 }
 
-@inproceedings{gswgan,
+@inproceedings{gs-wgan,
   author    = {Dingfan Chen and
                Tribhuvanesh Orekondy and
                Mario Fritz},
-  editor    = {Hugo Larochelle and
-               Marc'Aurelio Ranzato and
-               Raia Hadsell and
-               Maria{-}Florina Balcan and
-               Hsuan{-}Tien Lin},
   title     = {{GS-WGAN:} {A} Gradient-Sanitized Approach for Learning Differentially
                Private Generators},
-  booktitle = {Advances in Neural Information Processing Systems 33: Annual Conference
-               on Neural Information Processing Systems 2020, NeurIPS 2020, December
-               6-12, 2020, virtual},
+  booktitle = {Advances in Neural Information Processing Systems 33, {NeurIPS} 2020},
   year      = {2020},
 }
 
-@inproceedings{dpcgan,
+@inproceedings{dp-cgan,
   author    = {Reihaneh Torkzadehmahani and
                Peter Kairouz and
                Benedict Paten},
   title     = {{DP-CGAN:} Differentially Private Synthetic Data and Label Generation},
   booktitle = {{IEEE} Conference on Computer Vision and Pattern Recognition Workshops,
-               {CVPR} Workshops 2019, Long Beach, CA, USA, June 16-20, 2019},
+               {CVPR} Workshops 2019},
   pages     = {98--104},
-  publisher = {Computer Vision Foundation / {IEEE}},
   year      = {2019},
 }
 
@@ -267,256 +250,283 @@ numpages = {35}
                Luka Rimanic and
                Ce Zhang and
                Bo Li},
-  editor    = {Yongdae Kim and
-               Jong Kim and
-               Giovanni Vigna and
-               Elaine Shi},
   title     = {DataLens: Scalable Privacy Preserving Training via Gradient Compression
                and Aggregation},
-  booktitle = {{CCS} '21: 2021 {ACM} {SIGSAC} Conference on Computer and Communications
-               Security, Virtual Event, Republic of Korea, November 15 - 19, 2021},
+  booktitle = {{CCS} '21: 2021 {ACM} {SIGSAC} Conference on Computer and Communications Security},
   pages     = {2146--2168},
-  publisher = {{ACM}},
   year      = {2021},
-  doi       = {10.1145/3460120.3484579},
 }
 
-@article{gpate,
-  title={G-PATE: Scalable Differentially Private Data Generator via Private Aggregation of Teacher Discriminators},
-  author={Long, Yunhui and Wang, Boxin and Yang, Zhuolin and Kailkhura, Bhavya and Zhang, Aston and Gunter, Carl and Li, Bo},
-  journal={Advances in Neural Information Processing Systems},
-  volume={34},
-  year={2021}
+@inproceedings{g-pate,
+  author    = {Yunhui Long and 
+               Boxin Wang and 
+               Zhuolin Yang and 
+               Bhavya Kailkhura and
+               Aston Zhang and
+               Carl Gunter and
+               Bo Li},
+  title     = {G-PATE: Scalable Differentially Private Data Generator via Private Aggregation of Teacher Discriminators},
+  booktitle = {Advances in Neural Information Processing Systems 34, {NeurIPS} 2021},
+  pages     = {2965--2977},
+  year      = {2021}
 }
 
-@inproceedings{invertdpgan,
-  title={Differentially Private Generative Adversarial Networks with Model Inversion},
-  author={Chen, Dongjie and Cheung, Sen-ching Samson and Chuah, Chen-Nee and Ozonoff, Sally},
-  booktitle={2021 IEEE International Workshop on Information Forensics and Security (WIFS)},
-  pages={1--6},
-  year={2021},
-  organization={IEEE}
+@inproceedings{invert-dpgan,
+  author    = {Dongjie Chen and 
+               Sen-ching Samson Cheung and
+               Chen-Nee Chuah and 
+               Sally Ozonoff},
+  title     = {Differentially Private Generative Adversarial Networks with Model Inversion},
+  booktitle = {2021 IEEE International Workshop on Information Forensics and Security (WIFS)},
+  pages     = {1--6},
+  year      = {2021},
 }
 
 @article{scatternets,
-  title={Invariant scattering convolution networks},
-  author={Bruna, Joan and Mallat, St{\'e}phane},
-  journal={IEEE transactions on pattern analysis and machine intelligence},
-  volume={35},
-  number={8},
-  pages={1872--1886},
-  year={2013},
-  publisher={IEEE}
+  title   = {Invariant scattering convolution networks},
+  author  = {Joan Bruna and
+             St{\'e}phane Mallat},
+  journal = {IEEE transactions on pattern analysis and machine intelligence},
+  volume  = {35},
+  number  = {8},
+  pages   = {1872--1886},
+  year    = {2013},
 }
 
 @article{opacus,
-  author    = {Ashkan Yousefpour and
-               Igor Shilov and
-               Alexandre Sablayrolles and
-               Davide Testuggine and
-               Karthik Prasad and
-               Mani Malek and
-               John Nguyen and
-               Sayan Gosh and
-               Akash Bharadwaj and
-               Jessica Zhao and
-               Graham Cormode and
-               Ilya Mironov},
-  title     = {Opacus: User-Friendly Differential Privacy Library in PyTorch},
-  journal   = {CoRR},
-  volume    = {abs/2109.12298},
-  year      = {2021},
-  eprinttype = {arXiv},
-  eprint    = {2109.12298},
+  author  = {Ashkan Yousefpour and
+             Igor Shilov and
+             Alexandre Sablayrolles and
+             Davide Testuggine and
+             Karthik Prasad and
+             Mani Malek and
+             John Nguyen and
+             Sayan Gosh and
+             Akash Bharadwaj and
+             Jessica Zhao and
+             Graham Cormode and
+             Ilya Mironov},
+  title   = {Opacus: User-Friendly Differential Privacy Library in PyTorch},
+  journal = {CoRR},
+  volume  = {abs/2109.12298},
+  year    = {2021},
 }
 
 @inproceedings{dpsgd,
-  title={Deep learning with differential privacy},
-  author={Abadi, Martin and Chu, Andy and Goodfellow, Ian and McMahan, H Brendan and Mironov, Ilya and Talwar, Kunal and Zhang, Li},
-  booktitle={Proceedings of the 2016 ACM SIGSAC conference on computer and communications security},
-  pages={308--318},
-  year={2016}
+  title     = {Deep learning with differential privacy},
+  author    = {Martin Abadi and 
+               Andy Chu and  
+               Ian Goodfellow and
+               H. Brendan McMahan and
+               Ilya Mironov and 
+               Kunal Talwar and 
+               Li Zhang},
+  booktitle = {{CCS} '16: 2016 {ACM} {SIGSAC} Conference on Computer and Communications Security},
+  pages     = {308--318},
+  year      = {2016},
 }
 
-@misc{rdpaccountant,
-  author = {Mironov, Ilya and Talwar, Kunal and Zhang, Li},  
-  title = {Rényi Differential Privacy of the Sampled Gaussian Mechanism},
-  publisher = {arXiv},
-  year = {2019},
+@article{rdp-accountant
+  author  = {Ilya Mironov and
+             Kunal Talwar and
+             Li Zhang},
+  title   = {R{\'{e}}nyi Differential Privacy of the Sampled Gaussian Mechanism},
+  journal = {CoRR},
+  volume  = {abs/1908.10530},
+  year    = {2019},
 }
 
-
-@InProceedings{sinkhorn,
-  title = 	 {Learning Generative Models with Sinkhorn Divergences},
-  author = 	 {Genevay, Aude and Peyre, Gabriel and Cuturi, Marco},
-  booktitle = 	 {Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics},
-  pages = 	 {1608--1617},
-  year = 	 {2018},
-  editor = 	 {Storkey, Amos and Perez-Cruz, Fernando},
-  volume = 	 {84},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {09--11 Apr},
-  publisher =    {PMLR},
+@inproceedings{sinkhorn,
+  title     = {Learning Generative Models with Sinkhorn Divergences},
+  author    = {Aude Genevay and 
+               Gabriel Peyre and
+               Marco Cuturi},
+  booktitle = {Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics {AISTATS} 2018},
+  pages     = {1608--1617},
+  volume    = {84},
+  year      = {2018},
 }
 
-@article{gan,
-  title={Generative adversarial nets},
-  author={Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
-  journal={Advances in neural information processing systems},
-  volume={27},
-  year={2014}
+@inproceedings{gan,
+  title     = {Generative Adversarial Nets},
+  author    = {Ian Goodfellow and
+              Jean Pouget-Abadie and
+              Mehdi Mirza and
+              Bing Xu and
+              David Warde-Farley and
+              Sherjil Ozair and 
+              Aaron Courville and
+              Yoshua Bengio},
+  booktitle = {Advances in Neural Information Processing Systems 27, {NIPS} 2014},
+  year      = {2014}
 }
 
-@inproceedings{dpsinkhorn,
- author = {Cao, Tianshi and Bie, Alex and Vahdat, Arash and Fidler, Sanja and Kreis, Karsten},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
- pages = {12480--12492},
- title = {Don’t Generate Me: Training Differentially Private Generative Models with Sinkhorn Divergence},
- volume = {34},
- year = {2021}
+@inproceedings{ashtiani18,
+  author   = {Hassan Ashtiani and
+              Shai Ben-David and
+              Nicholas Harvey and
+              Christopher Liaw and
+              Abbas Mehrabian and
+              Yaniv Plan},
+  title     = {Nearly tight sample complexity bounds for learning mixtures of Gaussians via sample compression schemes},
+  booktitle = {Advances in Neural Information Processing Systems 31, {NIPS} 2018},
+  year      = {2018},
 }
 
+@inproceedings{dp-sinkhorn,
+  author    = {Tianshi Cao and 
+              Alex Bie and
+              Arash Vahdat and
+              Sanja Fidler and
+              Karsten Kreis},
+  title     = {Don’t Generate Me: Training Differentially Private Generative Models with Sinkhorn Divergence},
+  booktitle = {Advances in Neural Information Processing Systems 34, {NeurIPS} 2021},
+  year      = {2021}
+}
 
 @inproceedings{projectedgan,
- author = {Sauer, Axel and Chitta, Kashyap and M\"{u}ller, Jens and Geiger, Andreas},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
- pages = {17480--17492},
- title = {Projected GANs Converge Faster},
- volume = {34},
- year = {2021}
+   author    = {Axel Sauer and 
+                Kashyap Chitta and 
+                Jens M\"{u}ller and 
+                Andreas Geiger},
+   title     = {Projected GANs Converge Faster},
+   booktitle = {Advances in Neural Information Processing Systems 34, {NeurIPS} 2021},
+   pages     = {17480--17492},
+   year      = {2021}
 }
 
-@inproceedings{sincnets,
-  title={Speaker recognition from raw waveform with sincnet},
-  author={Ravanelli, Mirco and Bengio, Yoshua},
-  booktitle={2018 IEEE Spoken Language Technology Workshop (SLT)},
-  pages={1021--1028},
-  year={2018},
-  organization={IEEE}
+@inproceedings{sincnet,
+  title     = {Speaker recognition from raw waveform with sincnet},
+  author    = {Mirco Ravanelli and 
+               Yoshua Bengio},
+  booktitle = {2018 IEEE Spoken Language Technology Workshop (SLT)},
+  pages     = {1021--1028},
+  year      = {2018},
 }
 
 @inproceedings{fid,
- author = {Heusel, Martin and Ramsauer, Hubert and Unterthiner, Thomas and Nessler, Bernhard and Hochreiter, Sepp},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
- pages = {},
- title = {GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium},
- volume = {30},
- year = {2017}
+  author    = {Martin Heusel and
+               Hubert Ramsauer and
+               Thomas Unterthiner and
+               Bernhard Nessler and
+               Sepp Hochreiter},
+  title     = {GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium},
+  booktitle = {Advances in Neural Information Processing Systems 30, {NIPS} 2017},
+  year      = {2017}
 }
 
-@inproceedings{dpmerf,
+@inproceedings{dp-merf,
   author    = {Frederik Harder and
                Kamil Adamczewski and
                Mijung Park},
-  editor    = {Arindam Banerjee and
-               Kenji Fukumizu},
   title     = {{DP-MERF:} Differentially Private Mean Embeddings with Random Features
                for Practical Privacy-preserving Data Generation},
-  booktitle = {The 24th International Conference on Artificial Intelligence and Statistics,
-               {AISTATS} 2021, April 13-15, 2021, Virtual Event},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {130},
+  booktitle = {The 24th International Conference on Artificial Intelligence and Statistics, {AISTATS} 2021},
   pages     = {1819--1827},
-  publisher = {{PMLR}},
   year      = {2021},
 }
+
 @article{privbayes,
-  author = {Zhang, Jun and Cormode, Graham and Procopiuc, Cecilia M. and Srivastava, Divesh and Xiao, Xiaokui},
-  title = {PrivBayes: Private Data Release via Bayesian Networks},
-  year = {2017},
+  author     = {Jun Zhang and 
+                Graham Cormode and
+                Cecilia M. Procopiuc and
+                Divesh Srivastava and 
+                Xiaokui Xiao},
+  title      = {PrivBayes: Private Data Release via Bayesian Networks},
   issue_date = {December 2017},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  volume = {42},
-  number = {4},
-  issn = {0362-5915},
-  doi = {10.1145/3134428},
-  journal = {ACM Trans. Database Syst.},
-  month = {oct},
-  articleno = {25},
-  numpages = {41},
+  volume     = {42},
+  number     = {4},
+  journal    = {ACM Trans. Database Syst.},
+  numpages   = {41},
+  year       = {2017},
 }
 
 @inproceedings{pmw,
- author = {Hardt, Moritz and Ligett, Katrina and Mcsherry, Frank},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {F. Pereira and C.J. Burges and L. Bottou and K.Q. Weinberger},
- pages = {},
- title = {A Simple and Practical Algorithm for Differentially Private Data Release},
- volume = {25},
- year = {2012}
+  author    = {Moritz Hardt and
+               Katrina  Ligett and
+               Frank Mcsherry},
+  booktitle = {Advances in Neural Information Processing Systems 25, {NIPS} 2012},
+  title     = {A Simple and Practical Algorithm for Differentially Private Data Release},
+  year      = {2012},
 }
 
-@article{datasetdistillation,
-  author    = {Tongzhou Wang and
-               Jun{-}Yan Zhu and
-               Antonio Torralba and
-               Alexei A. Efros},
-  title     = {Dataset Distillation},
-  journal   = {CoRR},
-  volume    = {abs/1811.10959},
-  year      = {2018},
-  eprinttype = {arXiv},
-  eprint    = {1811.10959},
+@article{dataset-distillation,
+  author  = {Tongzhou Wang and
+             Jun{-}Yan Zhu and
+             Antonio Torralba and
+             Alexei A. Efros},
+  title   = {Dataset Distillation},
+  journal = {CoRR},
+  volume  = {abs/1811.10959},
+  year    = {2018},
 }
 
-@misc{zhang2022bring,
-    title={Bring Your Own Algorithm for Optimal Differentially Private Stochastic Minimax Optimization},
-    author={Liang Zhang and Kiran Koshy Thekumparampil and Sewoong Oh and Niao He},
-    year={2022},
-    eprint={2206.00363},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+@article{dp-minimax-byoa,
+  title   = {Bring Your Own Algorithm for Optimal Differentially Private Stochastic Minimax Optimization},
+  author  = {Liang Zhang and
+             Kiran Koshy Thekumparampil and
+             Sewoong Oh and 
+             Niao He},
+  journal = {CoRR},
+  volume  = {abs/2206.00363},
+  year    = {2022},
 }
 
-@misc{kang2022stability,
-    title={Stability and Generalization of Differentially Private Minimax Problems},
-    author={Yilin Kang and Yong Liu and Jian Li and Weiping Wang},
-    year={2022},
-    eprint={2204.04858},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+@inproceedings{dp-sgda,
+  title     = {Differentially Private SGDA for Minimax Problem},
+  author    = {Zhenhuan Yang and 
+               Shu Hu and 
+               Yunwen Lei and 
+               Kush R. Varshney and
+               Siwei Lyu and
+               Yiming Ying},
+  booktitle = {Proceedings of the Thirty-Seventh Conference on Uncertainty in Artificial Intelligence, {UAI} 2022},
+  year      = {2022},
 }
 
-@misc{yang2022differentially,
-    title={Differentially Private SGDA for Minimax Problems},
-    author={Zhenhuan Yang and Shu Hu and Yunwen Lei and Kush R. Varshney and Siwei Lyu and Yiming Ying},
-    year={2022},
-    eprint={2201.09046},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+@article{dp-minimax-stability,
+  title   = {Stability and Generalization of Differentially Private Minimax Problems},
+  author  = {Yilin Kang and 
+             Yong Liu and 
+             Jian Li and 
+             Weiping Wang},
+  volume  = {abs/2204.04858},
+  journal = {CoRR},
+  year    = {2022},
 }
 
-@article{rosenblatt2020differentially,
-  title={Differentially private synthetic data: Applied evaluations and enhancements},
-  author={Rosenblatt, Lucas and Liu, Xiaoyan and Pouyanfar, Samira and de Leon, Eduardo and Desai, Anuj and Allen, Joshua},
-  journal={arXiv preprint arXiv:2011.05537},
-  year={2020}
+@article{rosenblatt20synthetic,
+  title   = {Differentially private synthetic data: Applied evaluations and enhancements},
+  author  = {Lucas Rosenblatt and 
+             Xiaoyan Liu and 
+             Samira Pouyanfar and 
+             Eduardo de Leon and 
+             Anuj Desai and
+             Joshua Allen},
+  journal = {CoRR}
+  volume  = {abs/2011.05537},
+  year    = {2020}
 }
 
-
-
-@InProceedings{farnia2021train,
-  title = 	 {Train simultaneously, generalize better: Stability of gradient-based minimax learners},
-  author =       {Farnia, Farzan and Ozdaglar, Asuman},
-  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
-  pages = 	 {3174--3185},
-  year = 	 {2021},
-  editor = 	 {Meila, Marina and Zhang, Tong},
-  volume = 	 {139},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {18--24 Jul},
-  publisher =    {PMLR},
+@inproceedings{farnia21minimax-generalization,
+  title     = {Train simultaneously, generalize better: Stability of gradient-based minimax learners},
+  author    = {Farzan Farnia and
+               Asuman Ozdaglar},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning, {ICML} 2021},
+  pages     = {3174--3185},
+  year      = {2021},
 }
 
-@article{xie2018differentially,
-  title={Differentially private generative adversarial network},
-  author={Xie, Liyang and Lin, Kaixiang and Wang, Shu and Wang, Fei and Zhou, Jiayu},
-  journal={arXiv preprint arXiv:1802.06739},
-  year={2018}
+@article{dpgan,
+  title   = {Differentially private generative adversarial network},
+  author  = {Liyang Xie and
+             Kaixiang Lin and
+             Shu Wang and
+             Fei Wang and
+             Jiayu Zhou},
+  journal = {CoRR}
+  volume  = {abs/1802.06739},
+  year    = {2018}
 }
 
 @article{zhang2020newton,
@@ -526,11 +536,9 @@ numpages = {35}
   year={2020}
 }
 
-@inproceedings{fan2020survey,
-  title={
-  \href{https://www2.isye.gatech.edu/~fferdinando3/cfp/PPAI20/papers/paper_9.pdf}{A survey of differentially private generative adversarial networks}},
-  author={Fan, Liyue},
-  booktitle={The AAAI Workshop on Privacy-Preserving Artificial Intelligence},
-  pages={8},
-  year={2020}
+@inproceedings{dpgan-survey,
+  title     = {A survey of differentially private generative adversarial networks}},
+  author    = {Liyue Fan},
+  booktitle = {The First AAAI Workshop on Privacy-Preserving Artificial Intelligence, {PPAI-20}},
+  year      = {2020}
 }
