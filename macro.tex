@@ -1,4 +1,16 @@
+% packages
 \usepackage{amsmath,amssymb,amsthm,dsfont}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% links
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
 
 % domains
 \newcommand{\R}{\mathbb{R}}
@@ -49,36 +61,22 @@
 \newcommand{\h}{\hat}
 
 % thms
-
 \theoremstyle{definition}
 
-% \newtheorem{innercustomgeneric}{\customgenericname}
-% \providecommand{\customgenericname}{}
-% \newcommand{\newcustomtheorem}[2]{%
-%   \newenvironment{#1}[1]
-%   {%
-%    \renewcommand\customgenericname{#2}%
-%    \renewcommand\theinnercustomgeneric{##1}%
-%    \innercustomgeneric
-%   }
-%   {\endinnercustomgeneric}
-% }
-
-\newtheorem{thm}{Theorem}
-\newtheorem{clm}[thm]{Claim}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{rmk}[thm]{Remark}
-\newtheorem{cor}[thm]{Corollary}
-\newtheorem{prop}[thm]{Proposition}
-\newtheorem{fact}[thm]{Fact}
-\newtheorem{dfn}[thm]{Definition}
-\newtheorem{ex}[thm]{Exercise}
-\newtheorem{eg}[thm]{Example}
-\newtheorem{que}[thm]{Question}
-\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
 
 % misc
-
 \newcommand{\email}[1]{
     \href{mailto:{#1}}{\color{black}{\tt{#1}}}
 }
