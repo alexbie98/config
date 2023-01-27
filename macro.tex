@@ -52,30 +52,30 @@
 
 \theoremstyle{definition}
 
-\newtheorem{innercustomgeneric}{\customgenericname}
-\providecommand{\customgenericname}{}
-\newcommand{\newcustomtheorem}[2]{%
-  \newenvironment{#1}[1]
-  {%
-   \renewcommand\customgenericname{#2}%
-   \renewcommand\theinnercustomgeneric{##1}%
-   \innercustomgeneric
-  }
-  {\endinnercustomgeneric}
-}
+% \newtheorem{innercustomgeneric}{\customgenericname}
+% \providecommand{\customgenericname}{}
+% \newcommand{\newcustomtheorem}[2]{%
+%   \newenvironment{#1}[1]
+%   {%
+%    \renewcommand\customgenericname{#2}%
+%    \renewcommand\theinnercustomgeneric{##1}%
+%    \innercustomgeneric
+%   }
+%   {\endinnercustomgeneric}
+% }
 
-\newcustomtheorem{thm}{Theorem}
-\newcustomtheorem{clm}{Claim}
-\newcustomtheorem{lem}{Lemma}
-\newcustomtheorem{rmk}{Remark}
-\newcustomtheorem{cor}{Corollary}
-\newcustomtheorem{prop}{Proposition}
-\newcustomtheorem{fact}{Fact}
-\newcustomtheorem{dfn}{Definition}
-\newcustomtheorem{ex}{Exercise}
-\newcustomtheorem{eg}{Example}
-\newcustomtheorem{que}{Question}
-\newcustomtheorem{conj}{Conjecture}
+\newtheorem{thm}{Theorem}
+\newtheorem{clm}[thm]{Claim}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{dfn}[thm]{Definition}
+\newtheorem{ex}[thm]{Exercise}
+\newtheorem{eg}[thm]{Example}
+\newtheorem{que}[thm]{Question}
+\newtheorem{conj}[thm]{Conjecture}
 
 % misc
 
