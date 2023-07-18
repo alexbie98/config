@@ -20,22 +20,33 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Q}{\mathbb{Q}}
 
+% mathcal
 \newcommand{\cA}{\mathcal{A}}
 \newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
 \newcommand{\cM}{\mathcal{M}}
 \newcommand{\cN}{\mathcal{N}}
-\newcommand{\cD}{\mathcal{D}}
-\newcommand{\cG}{\mathcal{G}}
-\newcommand{\cX}{\mathcal{X}}
-\newcommand{\cY}{\mathcal{Y}}
-\newcommand{\cH}{\mathcal{H}}
-\newcommand{\cF}{\mathcal{F}}
-\newcommand{\cZ}{\mathcal{Z}}
-\newcommand{\cL}{\mathcal{L}}
-\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
 \newcommand{\cQ}{\mathcal{Q}}
 \newcommand{\cR}{\mathcal{R}}
-
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
 
 % symbol
 \newcommand{\eps}{\varepsilon}
@@ -43,8 +54,10 @@
 
 % operators
 \newcommand{\sub}{\subseteq}
-\renewcommand{\P}{\mathbb{P}}
+
+\renewcommand{\P}[2]{{\ifx&#1& \mathbb{P} \else \underset{#1}{\mathbb{P}} \fi \left\{#2\right\}}}
 \newcommand{\E}{\mathbb{E}}
+
 \newcommand{\Cdot}{\boldsymbol{\cdot}}
 
 \DeclareMathOperator{\var}{Var}
@@ -57,14 +70,11 @@
 \renewcommand{\l}{\left}
 \renewcommand{\r}{\right}
 
-\newcommand{\wt}{\widetilde}
 \renewcommand{\t}{\tilde}
-
-\newcommand{\wh}{\widehat}
 \newcommand{\h}{\hat}
 \newcommand{\bs}{\boldsymbol}
 
-% thms
+% theorems
 \theoremstyle{definition}
 
 \newtheorem{theorem}{Theorem}
