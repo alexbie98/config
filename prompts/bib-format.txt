@@ -1,0 +1,111 @@
+Hi! Can you help me format some latex .bib files? Here's some examples of formatted .bib entries:
+
+@inproceedings{privacy-onion,
+  title     = {The Privacy Onion Effect: Memorization is Relative},
+  author    = {Nicholas Carlini and
+               Matthew Jagielski and
+               Chiyuan Zhang and
+               Nicolas Papernot and
+               Andreas Terzis and
+               Florian Tram{\`{e}}r},
+  booktitle = {Advances in Neural Information Processing Systems 35 ({NeurIPS}'22)},
+  year      = {2022},
+}
+
+@inproceedings{lora,
+  title     = {{LoRA}: Low-Rank Adaptation of Large Language Models},
+  author    = {Edward J. Hu and
+               Yelong Shen and
+               Phillip Wallis and
+               Zeyuan Allen{-}Zhu and
+               Yuanzhi Li and
+               Shean Wang and
+               Lu Wang and
+               Weizhu Chen},
+  booktitle = {10th International Conference on Learning Representations ({ICLR}'22)},
+  year      = {2022}
+}
+
+@inproceedings{bert,
+  title        = {{BERT}: Pre-training of Deep Bidirectional Transformers for Language
+                  Understanding},
+  author       = {Jacob Devlin and
+                  Ming{-}Wei Chang and
+                  Kenton Lee and
+                  Kristina Toutanova},
+  booktitle    = {Proceedings of the 2019 Conference of the North American Chapter of
+                  the Association for Computational Linguistics ({NAACL}'19)},
+  year         = {2019}
+}
+
+Here's some more examples, from the DBLP input to the desired output:
+
+DBLP input:
+@inproceedings{DBLP:conf/icml/ChenK0H20,
+  author       = {Ting Chen and
+                  Simon Kornblith and
+                  Mohammad Norouzi and
+                  Geoffrey E. Hinton},
+  title        = {A Simple Framework for Contrastive Learning of Visual Representations},
+  booktitle    = {Proceedings of the 37th International Conference on Machine Learning,
+                  {ICML} 2020, 13-18 July 2020, Virtual Event},
+  series       = {Proceedings of Machine Learning Research},
+  volume       = {119},
+  pages        = {1597--1607},
+  publisher    = {{PMLR}},
+  year         = {2020},
+  url          = {http://proceedings.mlr.press/v119/chen20j.html},
+  timestamp    = {Tue, 15 Dec 2020 17:40:18 +0100},
+  biburl       = {https://dblp.org/rec/conf/icml/ChenK0H20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+Formatted Output:
+@inproceedings{simclr,
+  title     = {A Simple Framework for Contrastive Learning of Visual Representations},
+  author    = {Ting Chen and
+               Simon Kornblith and
+               Mohammad Norouzi and
+               Geoffrey E. Hinton},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning ({ICML'20})},
+  year      = {2020}
+}
+
+DBLP input:
+@inproceedings{DBLP:conf/cvpr/HeCXLDG22,
+  author       = {Kaiming He and
+                  Xinlei Chen and
+                  Saining Xie and
+                  Yanghao Li and
+                  Piotr Doll{\'{a}}r and
+                  Ross B. Girshick},
+  title        = {Masked Autoencoders Are Scalable Vision Learners},
+  booktitle    = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition,
+                  {CVPR} 2022, New Orleans, LA, USA, June 18-24, 2022},
+  pages        = {15979--15988},
+  publisher    = {{IEEE}},
+  year         = {2022},
+  url          = {https://doi.org/10.1109/CVPR52688.2022.01553},
+  doi          = {10.1109/CVPR52688.2022.01553},
+  timestamp    = {Wed, 05 Oct 2022 16:31:19 +0200},
+  biburl       = {https://dblp.org/rec/conf/cvpr/HeCXLDG22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+Formatted Output:
+@inproceedings{mae,
+  title     = {Masked Autoencoders Are Scalable Vision Learners},
+  author    = {Kaiming He and
+               Xinlei Chen and
+               Saining Xie and
+               Yanghao Li and
+               Piotr Doll{\'{a}} and
+               Ross B. Girshick},
+  booktitle = {Proceedings of the 2022 {IEEE/CVF} Conference on Computer Vision and Pattern Recognition ({CVPR}'22)},
+  year      = {2022}
+}
+
+Note the author name formatting, and the fields we want (title, author, booktitle, year). 
+Also make sure special characters are converted to be latex compatible.
+
+Can you do it for the following entries?
