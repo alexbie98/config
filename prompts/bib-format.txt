@@ -38,7 +38,36 @@ Hi! Can you help me format some latex .bib files? Here's some examples of format
   year         = {2019}
 }
 
+
 Here's some more examples, from the DBLP input to the desired output:
+
+DBLP input:
+@article{DBLP:journals/corr/abs-1908-10530,
+  author       = {Ilya Mironov and
+                  Kunal Talwar and
+                  Li Zhang},
+  title        = {R{\'{e}}nyi Differential Privacy of the Sampled Gaussian Mechanism},
+  journal      = {CoRR},
+  volume       = {abs/1908.10530},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1908.10530},
+  eprinttype    = {arXiv},
+  eprint       = {1908.10530},
+  timestamp    = {Thu, 11 Aug 2022 16:33:49 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1908-10530.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+Formatted output:
+@article{rdp-accountant,
+  title   = {R{\'e}nyi Differential Privacy of the Sampled Gaussian Mechanism},
+  author  = {Ilya Mironov and
+             Kunal Talwar and
+             Li Zhang},
+  journal = {CoRR},
+  volume  = {abs/1908.10530},
+  year    = {2019},
+}
 
 DBLP input:
 @inproceedings{DBLP:conf/icml/ChenK0H20,
@@ -60,7 +89,7 @@ DBLP input:
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
-Formatted Output:
+Formatted output:
 @inproceedings{simclr,
   title     = {A Simple Framework for Contrastive Learning of Visual Representations},
   author    = {Ting Chen and
@@ -92,7 +121,7 @@ DBLP input:
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
-Formatted Output:
+Formatted output:
 @inproceedings{mae,
   title     = {Masked Autoencoders Are Scalable Vision Learners},
   author    = {Kaiming He and
