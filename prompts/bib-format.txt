@@ -23,7 +23,7 @@ Hi! Can you help me format some latex .bib files? Here's some examples of format
                Lu Wang and
                Weizhu Chen},
   booktitle = {10th International Conference on Learning Representations ({ICLR}'22)},
-  year      = {2022}
+  year      = {2022},
 }
 
 @inproceedings{bert,
@@ -35,7 +35,7 @@ Hi! Can you help me format some latex .bib files? Here's some examples of format
                   Kristina Toutanova},
   booktitle    = {Proceedings of the 2019 Conference of the North American Chapter of
                   the Association for Computational Linguistics ({NAACL}'19)},
-  year         = {2019}
+  year         = {2019},
 }
 
 
@@ -66,7 +66,7 @@ Formatted output:
              Li Zhang},
   journal = {CoRR},
   volume  = {abs/1908.10530},
-  year    = {2019}
+  year    = {2019},
 }
 
 DBLP input:
@@ -97,7 +97,7 @@ Formatted output:
                Mohammad Norouzi and
                Geoffrey E. Hinton},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning ({ICML}'20)},
-  year      = {2020}
+  year      = {2020},
 }
 
 DBLP input:
@@ -131,12 +131,11 @@ Formatted output:
                Piotr Doll{\'{a}} and
                Ross B. Girshick},
   booktitle = {Proceedings of the 2022 {IEEE/CVF} Conference on Computer Vision and Pattern Recognition ({CVPR}'22)},
-  year      = {2022}
+  year      = {2022},
 }
 
 That's the end of the examples.
 
-VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we want: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles).
-Also make sure special characters are converted to be latex compatible, and we don't have a comma on the last line of an entry.
+VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we want: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles). Also make sure special characters are converted to be latex compatible.
 
 Can you do it for the following entries?
