@@ -139,5 +139,5 @@ That's the end of the examples.
 VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we want: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles).
 Also make sure special characters are converted to be latex compatible, and we don't have a comma on the last line of an entry.
 
-Can you do it for the following entries? Output the solutions all in a single text block.
+Can you do it for the following entries? After you finish, can you put all the formatted entries into one code block for easy copy-pasting?
 
