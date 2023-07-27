@@ -134,9 +134,10 @@ Formatted output:
   year      = {2022}
 }
 
-VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we want: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles).
-Also make sure special characters are converted to be latex compatible, and we don't have a common on the last line of an entry.
+That's the end of the examples.
 
-Can you do it for the following entries? Please output all answers into a single block for easy copy-pasting. 
-You can do it! I'm counting on you.
+VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we want: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles).
+Also make sure special characters are converted to be latex compatible, and we don't have a comma on the last line of an entry.
+
+Can you do it for the following entries? Output the solutions all in a single text block.
 
