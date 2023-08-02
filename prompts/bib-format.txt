@@ -136,6 +136,6 @@ Formatted output:
 
 That's the end of the examples.
 
-VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we want: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles). Also make sure special characters are converted to be latex compatible.
+VERY IMPORTANT!! Note the author name formatting (one on each line), and the fields we keep: title, author, booktitle, year (replacing booktitle with journal and volume for CoRR articles). We don't want the other fields, especially not a long abstract! Also make sure special characters are converted to be latex compatible.
 
-Can you do it for the following entries?
+Can you do it for the following entr(ies)?
