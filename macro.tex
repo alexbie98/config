@@ -57,7 +57,7 @@
 \newcommand{\sub}{\subseteq}
 
 \renewcommand{\P}[2]{{\ifx&#1& \mathbb{P} \else \underset{#1}{\mathbb{P}} \fi \left\{#2\right\}}}
-\newcommand{\E}{\mathbb{E}}
+\newcommand{\E}[2]{{\ifx&#1& \mathbb{E} \else \underset{#1}{\mathbb{E}} \fi \left[#2\right]}}
 
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
