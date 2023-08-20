@@ -60,7 +60,7 @@ DBLP input:
 
 Formatted output:
 @article{rdp-accountant,
-  title   = {R{\'e}nyi Differential Privacy of the Sampled Gaussian Mechanism},
+  title   = {R{\'e}nyi Differential Privacy of the Sampled {G}aussian Mechanism},
   author  = {Ilya Mironov and
              Kunal Talwar and
              Li Zhang},
