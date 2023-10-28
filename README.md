@@ -1,3 +1,3 @@
 # config
 
-Repository of dotfiles, latex (hosted for overleaf), and other configuration-related stuff.
+Repository of dotfiles, latex (hosted for overleaf), configuration-related stuff, and various prompt/code snips I refer to.
