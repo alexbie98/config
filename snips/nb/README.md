@@ -1,7 +1,7 @@
 Use to start a jupyter notebook on slurm
 
     $ chmod +x nb.sh
-    $ ./nb.sh
+    $ ./nb.sh gpu
     > | URL:
     > http://localhost... # paste into browser
     > | SSH COMMAND:
