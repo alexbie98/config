@@ -6,11 +6,19 @@ PORT=1972
 # Remove existing nb.log file, if it exists
 rm -f nb.log
 
-# Check if the argument 'cpu' is provided
-if [ "$1" == "cpu" ]; then
+# Check if the argument is provided
+if [ -z "$1" ]; then
+  echo "ERROR: No argument provided. Please specify 'cpu' or 'gpu'."
+  exit 1
+elif [ "$1" == "gpu" ]; then
+  echo "STARTING GPU NOTEBOOK"
+  JOB_ID=$(sbatch nb_gpu.sbatch | awk '{print $4}')
+elif [ "$1" == "cpu" ]; then
+  echo "STARTING CPU NOTEBOOK"
   JOB_ID=$(sbatch nb_cpu.sbatch | awk '{print $4}')
 else
-  JOB_ID=$(sbatch nb.sbatch | awk '{print $4}')
+  echo "ERROR: Invalid argument. Please specify 'cpu' or 'gpu'."
+  exit 1
 fi
 
 # Wait for the nb.log file to be created and for the Jupyter server to start
@@ -33,4 +41,3 @@ NODE=$(squeue --job $JOB_ID --noheader --format=%N)
 SSH_COMMAND="ssh -t -t user@cluster.ai -L ${PORT}:localhost:${PORT} ssh -N $NODE -L ${PORT}:localhost:${PORT}"
 echo "| SSH COMMAND:"
 echo "$SSH_COMMAND"
-
