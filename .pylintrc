@@ -1,0 +1,20 @@
+[MASTER]
+disable=
+  C0114, # missing-module-docstring
+  C0115, # missing-class-docstring
+  C0116, # missing-function-docstring
+  logging-fstring-interpolation,
+  not-callable,
+  invalid-unary-operand-type
+
+[FORMAT]
+  good-names=a,c,p,d,f,g,i,j,k,m,n,p,q,t,w,x,y,z,lr,ew
+  max-line-length=120
+
+[TYPECHECK]
+  generated-members=torch.*
+
+[DESIGN]
+  max-attributes=12
+  max-args=8
+  max-locals=50
