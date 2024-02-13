@@ -5,11 +5,12 @@ disable=
   C0116, # missing-function-docstring
   logging-fstring-interpolation,
   not-callable,
-  invalid-unary-operand-type
+  invalid-unary-operand-type,
+  C0200
 
 [FORMAT]
   good-names=a,c,p,d,f,g,i,j,k,m,n,p,q,t,w,x,y,z,lr,ew
-  max-line-length=120
+  max-line-length=150
 
 [TYPECHECK]
   generated-members=torch.*
