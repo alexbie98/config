@@ -9,7 +9,7 @@ fi
 NOTEBOOK_PATH="$1"
 NOTEBOOK_DIR=$(dirname "$NOTEBOOK_PATH")
 NOTEBOOK_NAME=$(basename "$NOTEBOOK_PATH" .ipynb)
-TXT_PATH="$NOTEBOOK_DIR/$NOTEBOOK_NAME.txt"
+TXT_PATH="$NOTEBOOK_DIR/$NOTEBOOK_NAME.txt" # depending on the version, might actually output a .py file
 PY_SCRIPT_PATH="scripts/$NOTEBOOK_NAME.py"
 
 # Step 1: Convert the notebook to a .txt file
@@ -33,7 +33,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
 
     if [[ $in_notebook_args -eq 1 ]]; then
         echo "#$line"
-    elif [[ $line =~ ^%.* ]]; then
+    elif [[ $line =~ ^\%.* ]] || [[ $line =~ ^get_ipython\(.* ]]; then
         # Comment out lines starting with %
         echo "#$line"
     else
