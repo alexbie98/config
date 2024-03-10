@@ -11,3 +11,5 @@ For cpu notebook:
 
     $ ./nb.sh cpu
     > ...
+
+Thanks to GPT-4 for the helpful script.
