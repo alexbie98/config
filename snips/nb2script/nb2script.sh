@@ -15,6 +15,9 @@ PY_SCRIPT_PATH="scripts/$NOTEBOOK_NAME.py"
 # Step 1: Convert the notebook to a .txt file
 jupyter nbconvert --to script "$NOTEBOOK_PATH"
 
+# Ensure the scripts directory exists
+mkdir -p scripts
+
 # Step 2: Move and rename the .txt file to a .py file in the scripts directory
 mv "$TXT_PATH" "$PY_SCRIPT_PATH"
 
