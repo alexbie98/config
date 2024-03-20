@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# set up an alias to a machine you log into often
+# 1. wget https://raw.githubusercontent.com/alexbie98/config/main/snips/server
+# 2. replace <server.com>
+# 3. mv server ~/bin/
+# 4. chmod +x server
+# 5. add 'export PATH="$PATH:$HOME/bin"' to ~/.bashrc
+
+
+# Define server address
+SERVER="<server.com>"
+
+# Check if the first argument is 'sync'
+if [ "$1" == "sync" ]; then
+    echo "Syncing .vimrc and .bashrc..."
+
+    # Sync .vimrc
+    rsync -av ~/.vimrc "$SERVER:~/.vimrc"
+
+    # Sync .bashrc
+    rsync -av ~/.bashrc "$SERVER:~/.bashrc"
+
+    echo "Sync complete."
+fi
+
+# SSH into the server
+ssh "$SERVER"
