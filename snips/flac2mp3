@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Check if ffmpeg is installed
+if ! command -v ffmpeg &> /dev/null; then
+  echo "ffmpeg could not be found. Please install it and try again."
+  exit 1
+fi
+
+# Check if an argument was provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 path/to/your/directory"
+  exit 1
+fi
+
+# Directory to search for .flac files
+input_dir="$1"
+
+# Find all .flac files and convert them to .mp3
+find "$input_dir" -type f -name "*.flac" | while read -r flac_file; do
+  # Get the directory of the file
+  dir=$(dirname "$flac_file")
+  # Get the base name of the file (without extension)
+  base_name=$(basename "$flac_file" .flac)
+  # Set the output file path
+  mp3_file="$dir/$base_name.mp3"
+  # Convert the .flac file to .mp3
+  ffmpeg -i "$flac_file" -ab 320k -map_metadata 0 -id3v2_version 3  "$mp3_file" && rm "$flac_file"
+done
+
+echo "Conversion complete."
+
