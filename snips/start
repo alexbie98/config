@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Check if an argument was provided
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 project_name"
+  exit 1
+fi
+
+# need this for mac
+alias google-chrome="open -na \"Google Chrome\" --args"
+
+# Decision structure based on the argument
+case "$1" in
+  "project")
+    google-chrome --new-window "https://www.youtube.com" &
+    google-chrome --new-window "https://chatgpt.com" \
+    "https://github.com" &
+    echo "Started project."
+    ;;
+  "admin")
+    google-chrome --new-window "https://calendar.google.com/calendar/u/0/r" \
+    "https://mail.google.com/mail/u/0/#inbox" \
+    "https://app.slack.com" &
+    echo "Started admin."
+    ;;
+  "day")
+    start admin &
+    echo "run an ssh command here" &
+    echo "Started day." &
+    ;;
+  *)
+    echo "Unknown project: $1"
+    exit 2
+    ;;
+esac
