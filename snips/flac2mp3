@@ -16,16 +16,22 @@ fi
 input_dir="$1"
 
 # Find all .flac files and convert them to .mp3
-find "$input_dir" -type f -name "*.flac" | while read -r flac_file; do
+find "$input_dir" -type f -name "*.flac" -print0 | while IFS= read -r -d '' flac_file; do
+  # Print the file being processed (for debugging)
+  echo "Processing: $flac_file"
+
   # Get the directory of the file
   dir=$(dirname "$flac_file")
   # Get the base name of the file (without extension)
   base_name=$(basename "$flac_file" .flac)
   # Set the output file path
   mp3_file="$dir/$base_name.mp3"
+
+  # Debugging: Show the full ffmpeg command
+  echo "Running: ffmpeg -nostdin -i \"$flac_file\" -ab 320k -map_metadata 0 -id3v2_version 3 \"$mp3_file\""
+
   # Convert the .flac file to .mp3
-  ffmpeg -i "$flac_file" -ab 320k -map_metadata 0 -id3v2_version 3  "$mp3_file" && rm "$flac_file"
+  ffmpeg -nostdin -i "$flac_file" -ab 320k -map_metadata 0 -id3v2_version 3 "$mp3_file" && rm -- "$flac_file"
 done
 
 echo "Conversion complete."
-
